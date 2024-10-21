@@ -1,0 +1,108 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+}
+
+/* Body styling */
+body {
+    background-color: #f9f9f9; /* Secondary color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333; /* Font color */
+}
+
+/* Container for stopwatch app */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    color: #4CAF50; /* Primary color */
+    margin-bottom: 20px;
+}
+
+/* Stopwatch Display */
+.time-display {
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Controls (Buttons) */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #4CAF50; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker shade for hover */
+}
+
+/* Lap Container */
+.laps-container {
+    margin-top: 20px;
+}
+
+.laps-container h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.laps-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps-list li {
+    font-size: 1rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .time-display {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .laps-container h2 {
+        font-size: 1.25rem;
+    }
+}

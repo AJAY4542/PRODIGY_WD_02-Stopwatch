@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Swift Stopwatch</h1>
+        <div class="stopwatch">
+            <div id="display" class="time-display">00:00:00</div>
+            <div class="controls">
+                <button id="startBtn" class="btn start-btn">Start</button>
+                <button id="pauseBtn" class="btn pause-btn">Pause</button>
+                <button id="resetBtn" class="btn reset-btn">Reset</button>
+                <button id="lapBtn" class="btn lap-btn">Lap</button>
+            </div>
+        </div>
+        <div class="laps-container">
+            <h2>Laps</h2>
+            <ul id="lapsList" class="laps-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
